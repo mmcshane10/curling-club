@@ -10,7 +10,6 @@ Forest green: #024b30
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -23,6 +22,8 @@ ul {
 
 li, .dropdown {
   float: left;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 li a, .dropbtn {
