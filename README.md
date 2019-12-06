@@ -8,7 +8,8 @@
 
 Friday Timeline:
 
-8am: Scaffold out project and add boilerplate code
+8am: Scaffold out project and add boilerplate code.
+9am: Build and style navbar and header apps.
 
 ## Component and Route Structure
 

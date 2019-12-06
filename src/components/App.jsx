@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Navbar from './Navbar';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <Navbar />
         <Header />
       </div>
     );
