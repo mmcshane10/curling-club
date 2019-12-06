@@ -17,7 +17,6 @@ function Navbar() {
         <li className='dropdown'>
           <a href='#' className='dropbtn'>Evergreen CC</a>
           <div className='dropdown-content'>
-            <a href='#'>About</a>
             <a href='#'>History</a>
             <a href='#'>Contact</a>
             <a href='#'>Membership</a>
