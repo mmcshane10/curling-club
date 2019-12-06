@@ -50,7 +50,7 @@
     "react/jsx-key": 2,
     "no-unused-vars": 1,
     "react/no-direct-mutation-state": 2,
-    "react/prefer-stateless-function": 2,
+    "react/prefer-stateless-function": 1,
     "react/no-unused-state": 2,
     "react/require-render-return": 2,
     "react/jsx-handler-names": 2
