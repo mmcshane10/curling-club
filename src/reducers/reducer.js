@@ -1,6 +1,6 @@
 const reducer = (state, action) => {
 
-  return state
+  return state;
 };
 
 export default reducer;
