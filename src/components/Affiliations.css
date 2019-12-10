@@ -8,5 +8,12 @@
 }
 
 .affImage {
-  max-width: 100%;
+  max-width: 90%;
+  padding: 5%;
+  border: 10px solid #46b3e6;
+}
+
+.affImage:hover {
+  border: 10px solid #cc0000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .3)
 }
