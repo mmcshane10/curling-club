@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { HashRouter } from 'react-router-dom';
-import { AppContainer } from 'react-hot-loader';
-import { createStore } from 'redux';
-import reducer from './reducers/reducer';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import rootReducer from './reducers';
+import { AppContainer } from 'react-hot-loader';
+import { HashRouter } from 'react-router-dom';
+import middlewareLogger from './middleware/middleware-logger';
+import thunkMiddleware from 'redux-thunk';
 
-const store = createStore(reducer);
+const store = createStore(rootReducer, applyMiddleware(middlewareLogger, thunkMiddleware));
 
 const render = (Component) => {
 

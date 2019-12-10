@@ -1,5 +1,4 @@
 import React from 'react';
-import ParallaxImg from '../img/parallax.jpg'
 import './Parallax.css';
 
 

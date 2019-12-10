@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import About from './About';
 import Animation1 from './Animation1';
 import Parallax from './Parallax';
+import DailyResults from './DailyResults';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class App extends React.Component {
         <Header />
         <About />
         <Parallax />
-        <Animation1 />
+        <DailyResults />
+        {/* <Animation1 /> */}
       </div>
     );
   }
