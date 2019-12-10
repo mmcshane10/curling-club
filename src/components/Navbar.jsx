@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import Logo from '../img/logo.jpg'
 
 
 function Navbar() {
@@ -26,6 +27,7 @@ function Navbar() {
           </div>
         </li>
         <li><Link to='/results'>Results</Link></li>
+        <img className='logoImg' src={Logo} />
       </ul>
     </div>
   );

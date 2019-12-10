@@ -13,6 +13,16 @@ Dark blue: #2e279d
   box-sizing: border-box;
 }
 
+.nav {
+  height: 10vh;
+}
+
+.logoImg {
+  float: right;
+  height: 9vh;
+  padding-right: 3%;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

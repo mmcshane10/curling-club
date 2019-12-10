@@ -20,7 +20,7 @@ class DailyResults extends React.Component {
     console.log(Object.entries(this.props.dailyMatches).length);
     
     if (Object.entries(this.props.dailyMatches).length === 0) {
-      resultsHeader = <h2>No results found for today's date. Check back tomorrow!</h2>
+      resultsHeader = <h3>No results found for today's date. Check back tomorrow!</h3>
     } else {
       resultsHeader = 
       <thead>
