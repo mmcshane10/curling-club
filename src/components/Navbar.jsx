@@ -10,7 +10,7 @@ function Navbar() {
         <li><Link to='/'>Home</Link></li>
         <li className='dropdown'>
           <a href='#' className='dropbtn'>Events</a>
-          <div className='dropdown-content'>
+          <div className='dropdown-stuff'>
             <a href='#'>Leagues</a>
             <a href='#'>Bonspiels</a>
             <a href='#'>Corporate Parties</a>
@@ -18,7 +18,7 @@ function Navbar() {
         </li>
         <li className='dropdown'>
           <a href='#' className='dropbtn'>Evergreen CC</a>
-          <div className='dropdown-content'>
+          <div className='dropdown-stuff'>
             <Link to='/history'>History</Link>
             <a href='#'>Contact</a>
             <a href='#'>Membership</a>

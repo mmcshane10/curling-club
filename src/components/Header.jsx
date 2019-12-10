@@ -9,7 +9,7 @@ function Header() {
           <span className='heading-primary-main'>Evergreen</span>
           <span className='heading-primary-sub'>Curling CLub</span>
         </h1>
-        <a href='#' className='btn btn-white btn-animated'>Become A Member</a>
+        <a href='#' className='button button-white button-animated'>Become A Member</a>
       </div>
     </header>
   );
