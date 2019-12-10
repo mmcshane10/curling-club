@@ -20,8 +20,8 @@ export function fetchDailyResults() {
             teamOne: json.results[i].sport_event.competitors[0].name,
             teamTwo: json.results[i].sport_event.competitors[1].name,
             status: json.results[i].sport_event_status.match_status,
-            TeamOneScore: json.results[i].sport_event_status.home_score,
-            TeamTwoScore: json.results[i].sport_event_status.away_score
+            teamOneScore: json.results[i].sport_event_status.home_score,
+            teamTwoScore: json.results[i].sport_event_status.away_score
           };
           dailyMatches = Object.assign({}, dailyMatches, {
             [newMatch.id]: newMatch
