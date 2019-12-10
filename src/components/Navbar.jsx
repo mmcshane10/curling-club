@@ -1,11 +1,13 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   return (
     <div className='nav'>
       <ul>
-        <li><a href='#home'>Home</a></li>
+        <li><Link to='/'>Home</Link></li>
         <li className='dropdown'>
           <a href='#' className='dropbtn'>Events</a>
           <div className='dropdown-content'>
@@ -23,7 +25,7 @@ function Navbar() {
             <a href='https://www.youtube.com/channel/UCYVxXAWpuM2Al3Mch8dRpdQ' target="_blank">Video Stream</a>
           </div>
         </li>
-        <li><a href='#home'>Stats</a></li>
+        <li><Link to='/results'>Results</Link></li>
       </ul>
     </div>
   );

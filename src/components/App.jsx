@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from './Header';
+import Home from './Home';
 import Navbar from './Navbar';
-import About from './About';
 import Animation1 from './Animation1';
-import Parallax from './Parallax';
 import DailyResults from './DailyResults';
+import { Switch, Route } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,10 +14,10 @@ class App extends React.Component {
     return (
       <div>
         <Navbar />
-        <Header />
-        <About />
-        <Parallax />
-        <DailyResults />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/results' component={DailyResults} />
+        </Switch>
         {/* <Animation1 /> */}
       </div>
     );
