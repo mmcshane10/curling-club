@@ -1,9 +1,10 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './Navbar';
 import Animation1 from './Animation1';
 import DailyResults from './DailyResults';
-import { Switch, Route } from 'react-router-dom';
+import History from './History'
 
 class App extends React.Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/results' component={DailyResults} />
+          <Route exact path='/history' component={History} />
         </Switch>
         {/* <Animation1 /> */}
       </div>

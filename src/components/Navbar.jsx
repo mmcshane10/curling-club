@@ -19,7 +19,7 @@ function Navbar() {
         <li className='dropdown'>
           <a href='#' className='dropbtn'>Evergreen CC</a>
           <div className='dropdown-content'>
-            <a href='#'>History</a>
+            <Link to='/history'>History</Link>
             <a href='#'>Contact</a>
             <a href='#'>Membership</a>
             <a href='https://www.youtube.com/channel/UCYVxXAWpuM2Al3Mch8dRpdQ' target="_blank">Video Stream</a>

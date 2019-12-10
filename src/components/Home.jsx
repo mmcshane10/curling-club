@@ -12,7 +12,6 @@ function Home() {
       <Parallax />
     </div>
   );
-
 }
 
 export default Home;
