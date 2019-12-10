@@ -1,0 +1,13 @@
+.parallax {
+  height: 50vh;
+  background-image: url(../img/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 15vh, 100% 0, 100% 35vh, 0 100%);
+}
+
+
+

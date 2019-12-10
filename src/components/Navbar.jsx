@@ -23,6 +23,7 @@ function Navbar() {
             <a href='https://www.youtube.com/channel/UCYVxXAWpuM2Al3Mch8dRpdQ' target="_blank">Video Stream</a>
           </div>
         </li>
+        <li><a href='#home'>Stats</a></li>
       </ul>
     </div>
   );
