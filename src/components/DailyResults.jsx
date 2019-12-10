@@ -15,16 +15,27 @@ class DailyResults extends React.Component {
   }
 
   render() {
+
+    let resultsHeader = '';
+    console.log(Object.entries(this.props.dailyMatches).length);
+    
+    if (Object.entries(this.props.dailyMatches).length === 0) {
+      resultsHeader = <h2>No results found for today's date. Check back tomorrow!</h2>
+    } else {
+      resultsHeader = 
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Matchup</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+    }
+
     return (
       <div>
         <table>
-          <thead>
-            <tr>
-              <th>Status</th>
-              <th>Matchup</th>
-              <th>Score</th>
-            </tr>
-          </thead>
+        {resultsHeader}
           <tbody>
             {Object.keys(this.props.dailyMatches).map(matchId => {
               let game = this.props.dailyMatches[matchId];
