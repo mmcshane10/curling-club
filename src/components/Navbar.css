@@ -25,7 +25,8 @@ Dark blue: #2e279d
 }
 
 .logoImg:hover {
-  animation: logoSlide 1.0s ease-out;
+  animation: logoSlide 1.0s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 ul {
