@@ -1,6 +1,6 @@
 .footer {
   font-family: 'Quicksand', sans-serif;
-  height: 40vh;
+  height: 43vh;
   padding: 25px;
   color: white;
   background-color: #4d80e4;
@@ -9,7 +9,7 @@
 .footer-logo {
   float: right;
   height: 30vh;
-  margin-top: 1%;
+  margin-top: 4%;
   text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5)
 }
 
@@ -25,4 +25,8 @@
 
 .contact-info {
   height: 50%
+}
+
+.btn-small {
+  margin-left: 8px;
 }

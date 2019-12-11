@@ -14,7 +14,10 @@ function Footer() {
           <p>Suite #155</p>
           <p>Beaverton, OR 97005</p>
           <p>Phone: 503-430-0910</p>
-          <input className='browser-default' type='text' placeholder='Joing Our Mailing List'/>
+          <span>
+          <input className='browser-default' type='text' placeholder='Joing Our Mailing List' />
+          <button className='btn-floating btn-small waves-effect waves-light blue'><i className="material-icons">add</i></button>
+          </span>
           <div className='social'>
             <a href="https://twitter.com/curlportland/" target='_blank'><img className='social-img' src={twitter} alt="twitter logo" /></a>
             <a href="https://www.instagram.com/curlportland/?ref=badge" target='_blank'><img className='social-img' src={IG} alt="Instagram logo" /></a>
