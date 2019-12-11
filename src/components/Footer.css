@@ -22,3 +22,7 @@
 .social-img:hover {
   box-shadow: 0 7px 7px rgba(255, 255, 255, 0.5)
 }
+
+.contact-info {
+  height: 50%
+}
