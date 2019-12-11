@@ -1,8 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import Logo from '../img/logo.jpg';
-import FullLogo from '../img/fulllogo.png';
+import Unnamed from '../img/unnamed.png';
 
 
 function Navbar() {
@@ -27,7 +26,7 @@ function Navbar() {
           </div>
         </li>
         <li className='navhover'><Link to='/results'>Results</Link></li>
-        <img className='logoImg' src={Logo} />
+        <img className='logoImg' src={Unnamed} />
       </ul>
     </div>
   );
