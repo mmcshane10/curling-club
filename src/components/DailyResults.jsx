@@ -33,7 +33,8 @@ class DailyResults extends React.Component {
     }
 
     return (
-      <div>
+      <div className='results'>
+        <h2 className='heading'>Live Results:</h2>
         <table>
           {resultsHeader}
           <tbody>

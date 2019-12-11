@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  height: 80vh;
+  height: 85vh;
   background-image: linear-gradient(to right bottom, rgb(70, 179, 230, 0.7), rgb(77, 128, 228, 0.7)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;

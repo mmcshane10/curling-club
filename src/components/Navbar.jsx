@@ -14,15 +14,14 @@ function Navbar() {
           <div className='dropdown-stuff'>
             <a href='#'>Leagues</a>
             <a href='#'>Bonspiels</a>
-            <a href='#'>Corporate Parties</a>
+            <a href='#'>Private Parties</a>
           </div>
         </li>
         <li className='dropdown'>
           <a href='#' className='dropbtn'>Evergreen CC</a>
           <div className='dropdown-stuff'>
             <Link to='/history'>History</Link>
-            <a href='#'>Contact</a>
-            <a href='#'>Membership</a>
+            <a href='#'>Membership Info</a>
             <a href='https://www.youtube.com/channel/UCYVxXAWpuM2Al3Mch8dRpdQ' target="_blank">Video Stream</a>
           </div>
         </li>
