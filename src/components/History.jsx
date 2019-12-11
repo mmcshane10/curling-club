@@ -1,6 +1,6 @@
 import React from 'react';
 import './History.css';
-import ECC from '../img/ECCice.jpg'
+import ECC from '../img/ECCice.jpg';
 
 function History() {
   return (

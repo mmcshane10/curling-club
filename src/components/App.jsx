@@ -6,6 +6,7 @@ import Animation1 from './Animation1';
 import DailyResults from './DailyResults';
 import History from './History';
 import Footer from './Footer';
+import MemberInfo from './MemberInfo';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,8 +19,9 @@ class App extends React.Component {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/results' component={DailyResults} />
+          {/* <Route exact path='/results' component={DailyResults} /> */}
           <Route exact path='/history' component={History} />
+          <Route exact path='/info' component={MemberInfo} />
         </Switch>
         <Footer />
         {/* <Animation1 /> */}

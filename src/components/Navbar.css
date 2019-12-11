@@ -37,7 +37,7 @@ ul {
   background-color: none;
 }
 
-li, .dropdown {
+.uppercase, .dropdown {
   float: left;
   text-transform: uppercase;
   font-weight: 400;
@@ -94,7 +94,7 @@ li.dropdown {
 
 @keyframes logoSlide {
   0% {
-    transform: translateX(247px);
+    transform: translateX(230px);
   }
 
   100% {
