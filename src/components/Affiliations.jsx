@@ -1,9 +1,9 @@
 import React from 'react';
-import 'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/css/materialize.min.css';
 import './Affiliations.css';
 import mopac from '../img/mopac.jpg';
 import usacurling from '../img/usacurling.jpg';
-import wcf from '../img/wcf.jpg'
+import wcf from '../img/wcf.jpg';
 
 function Affiliations() {
   return (

@@ -11,7 +11,7 @@ class DailyResults extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchDailyResults()    
+    this.props.fetchDailyResults();    
   }
 
   render() {
@@ -20,22 +20,22 @@ class DailyResults extends React.Component {
     console.log(Object.entries(this.props.dailyMatches).length);
     
     if (Object.entries(this.props.dailyMatches).length === 0) {
-      resultsHeader = <h3>No results found for today's date. Check back tomorrow!</h3>
+      resultsHeader = <h3>No results found for today's date. Check back tomorrow!</h3>;
     } else {
       resultsHeader = 
-      <thead>
-        <tr>
-          <th>Status</th>
-          <th>Matchup</th>
-          <th>Score</th>
-        </tr>
-      </thead>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Matchup</th>
+            <th>Score</th>
+          </tr>
+        </thead>;
     }
 
     return (
       <div>
         <table>
-        {resultsHeader}
+          {resultsHeader}
           <tbody>
             {Object.keys(this.props.dailyMatches).map(matchId => {
               let game = this.props.dailyMatches[matchId];
@@ -45,21 +45,21 @@ class DailyResults extends React.Component {
                   <td>{game.teamOne} - {game.teamTwo}</td>
                   <td>{game.teamOneScore} - {game.teamTwoScore}</td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </table>
       </div>
-    )
-  };
+    );
+  }
 }
 
 const mapStateToProps = (state) => ({
   dailyMatches: state.dailyMatches,
-})
+});
 
 const mapDispatchToProps = {
   fetchDailyResults,
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(DailyResults);

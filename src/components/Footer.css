@@ -1,0 +1,23 @@
+.footer {
+  font-family: 'Quicksand', sans-serif;
+  height: 40vh;
+  padding: 25px;
+  color: white;
+  background-color: #4d80e4;
+}
+
+.footer-logo {
+  float: right;
+  height: 30vh;
+  margin-top: 1%;
+}
+
+.social-img {
+  padding: 5px;
+  height: 6vh;
+  border-radius: 50%;
+}
+
+.social-img:hover {
+  box-shadow: 0 7px 7px rgba(255, 255, 255, 0.5)
+}

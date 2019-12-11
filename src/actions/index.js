@@ -7,7 +7,7 @@ export function fetchDailyResults() {
     let moment = new Moment().format();
     let date = moment.slice(0, 10);
     let testDate = '2019-04-01';
-    return fetch('http://api.sportradar.us/curling-t1/en/schedules/' + date + '/results.json?api_key=ufmacmt7he47k8kcf75c98a8').then(
+    return fetch('http://api.sportradar.us/curling-t1/en/schedules/' + testDate + '/results.json?api_key=ufmacmt7he47k8kcf75c98a8').then(
       response => response.json(),
       error => console.log('An error occurred.', error)
     ).then(function (json) {
