@@ -2,15 +2,16 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Logo from '../img/logo.jpg';
+import FullLogo from '../img/fulllogo.png';
 
 
 function Navbar() {
   return (
     <div className='nav'>
       <ul>
-        <li><Link to='/'>Home</Link></li>
+        <li className='navhover'><Link to='/'>Home</Link></li>
         <li className='dropdown'>
-          <a href='#' className='dropbtn'>Events</a>
+          <a href='#' className='dropbtn navhover'>Events</a>
           <div className='dropdown-stuff'>
             <a href='#'>Leagues</a>
             <a href='#'>Bonspiels</a>
@@ -18,14 +19,14 @@ function Navbar() {
           </div>
         </li>
         <li className='dropdown'>
-          <a href='#' className='dropbtn'>Evergreen CC</a>
+          <a href='#' className='dropbtn navhover'>Evergreen CC</a>
           <div className='dropdown-stuff'>
             <Link to='/history'>History</Link>
             <a href='#'>Membership Info</a>
             <a href='https://www.youtube.com/channel/UCYVxXAWpuM2Al3Mch8dRpdQ' target="_blank">Video Stream</a>
           </div>
         </li>
-        <li><Link to='/results'>Results</Link></li>
+        <li className='navhover'><Link to='/results'>Results</Link></li>
         <img className='logoImg' src={Logo} />
       </ul>
     </div>

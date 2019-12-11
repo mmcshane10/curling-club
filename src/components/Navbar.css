@@ -47,7 +47,7 @@ li a, .dropbtn {
 
 li a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(255, 0, 0, 0.15);
-  color: 024b30;
+  color: #024b30;
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2)
 }
 
@@ -79,4 +79,9 @@ li.dropdown {
 
 .dropdown:hover .dropdown-stuff {
   display: block;
+}
+
+.navhover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
 }

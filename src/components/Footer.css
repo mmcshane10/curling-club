@@ -10,6 +10,7 @@
   float: right;
   height: 30vh;
   margin-top: 1%;
+  text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5)
 }
 
 .social-img {
