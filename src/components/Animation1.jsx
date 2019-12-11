@@ -1,6 +1,6 @@
 import React from 'react';
-import sketch1 from '../sketches/sketch1';
 import P5Wrapper from 'react-p5-wrapper';
+import sketch1 from '../sketches/sketch1';
 
 function Animation1() {
 

@@ -12,6 +12,7 @@ function Home() {
       <About />
       <Parallax />
       <Affiliations />
+      <Animation1 />
     </div>
   );
 }
