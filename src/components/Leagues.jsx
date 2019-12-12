@@ -14,7 +14,7 @@ class Leagues extends React.Component {
                 {Object.keys(this.props.memberLeagues).map(leagueId => {
                     let league = this.props.memberLeagues[leagueId];
                     return (
-                            <div className='col s12 m5'>
+                            <div className='col s12 m6'>
                                 <div key={leagueId} className='card-panel'>
                                     <h5>{league.day}</h5>
                                     <p>{league.time}</p>

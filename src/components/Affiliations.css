@@ -8,9 +8,14 @@
 }
 
 .affImage {
-  width: 90%;
-  padding: 5%;
-  border: 10px solid #46b3e6;
+  width: 80%;
+  padding: 3%;
+  border: 12px solid #46b3e6;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .affImage:hover {

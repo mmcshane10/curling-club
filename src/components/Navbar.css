@@ -14,19 +14,14 @@ Dark blue: #2e279d
 }
 
 .nav {
-  height: 10vh;
+  margin: 2%
 }
 
 .logoImg {
   float: right;
-  height: 9vh;
+  height: 7vh;
   padding-right: 3%;
-  transform: translateX(82%);
-}
-
-.logoImg:hover {
-  animation: logoSlide 1.0s ease-in-out;
-  animation-fill-mode: forwards;
+  margin-bottom: 1%
 }
 
 ul {
@@ -90,14 +85,4 @@ li.dropdown {
 .navhover:hover {
   transform: translateY(-3px);
   box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
-}
-
-@keyframes logoSlide {
-  0% {
-    transform: translateX(230px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
 }

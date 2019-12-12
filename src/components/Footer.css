@@ -1,6 +1,6 @@
 .footer {
   font-family: 'Quicksand', sans-serif;
-  height: 43vh;
+  height: 30vh;
   padding: 25px;
   color: white;
   background-color: #4d80e4;
@@ -8,14 +8,15 @@
 
 .footer-logo {
   float: right;
-  height: 30vh;
-  margin-top: 4%;
+  height: 80%;
+  margin-top: 3%;
+  padding-right: 1%;
   text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5)
 }
 
 .social-img {
   padding: 5px;
-  height: 6vh;
+  height: 5vh;
   border-radius: 50%;
 }
 
