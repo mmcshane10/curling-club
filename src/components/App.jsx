@@ -1,8 +1,11 @@
 import React from 'react';
+import withFirebaseAuth from 'react-with-firebase-auth'
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
+import firebaseConfig from './firebaseConfig';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './Navbar';
-import Animation1 from './Animation1';
 import DailyResults from './DailyResults';
 import History from './History';
 import Footer from './Footer';
@@ -11,9 +14,14 @@ import MemberInfo from './MemberInfo';
 class App extends React.Component {
   constructor(props) {
     super(props);
-
   }
+
   render() {
+    const {
+      user,
+      signOut,
+      signInWithGoogle,
+    } = this.props;
     return (
       <div>
         <Navbar />
@@ -24,10 +32,12 @@ class App extends React.Component {
           <Route exact path='/info' component={MemberInfo} />
         </Switch>
         <Footer />
-        {/* <Animation1 /> */}
       </div>
     );
   }
 }
 
-export default(App);
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(App);
