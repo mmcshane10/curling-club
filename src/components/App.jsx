@@ -7,6 +7,7 @@ import DailyResults from './DailyResults';
 import History from './History';
 import Footer from './Footer';
 import MemberInfo from './MemberInfo';
+import Leagues from './Leagues'
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends React.Component {
           {/* <Route exact path='/results' component={DailyResults} /> */}
           <Route exact path='/history' component={History} />
           <Route exact path='/info' component={MemberInfo} />
+          <Route exact path='/leagues' component={Leagues} />
         </Switch>
         <Footer />
       </div>

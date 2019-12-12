@@ -4,14 +4,14 @@
 
 
 // const config = {
-//     apiKey: "AIzaSyCkmmrwt-DVldeL9CStxrroZacz5W69zOo",
-//     authDomain: "curling-club-75c91.firebaseapp.com",
-//     databaseURL: "https://curling-club-75c91.firebaseio.com",
-//     projectId: "curling-club-75c91",
-//     storageBucket: "curling-club-75c91.appspot.com",
-//     messagingSenderId: "26571857804",
-//     appId: "1:26571857804:web:66fee62eefc58b868bc0a9",
-//     measurementId: "G-79JY3KXLVC"
+    // apiKey: "AIzaSyCkINiHo9cItg_JVSdZl99zudrJkY_Q0XY",
+    // authDomain: "evergreen-curling.firebaseapp.com",
+    // databaseURL: "https://evergreen-curling.firebaseio.com",
+    // projectId: "evergreen-curling",
+    // storageBucket: "evergreen-curling.appspot.com",
+    // messagingSenderId: "319758824252",
+    // appId: "1:319758824252:web:5552d67e70ba6a115fa439",
+    // measurementId: "G-77WZSJZXQK"
 //   };
 
 //   firebase.initializeApp(config);

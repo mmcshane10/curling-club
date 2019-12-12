@@ -1,7 +1,6 @@
 import React from 'react';
 import './DailyResults.css';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { fetchDailyResults } from './../actions';
 
 class DailyResults extends React.Component {

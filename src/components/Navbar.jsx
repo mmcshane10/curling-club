@@ -12,7 +12,7 @@ function Navbar() {
         <li className='dropdown uppercase'>
           <a href='#' className='dropbtn navhover'>Events</a>
           <div className='dropdown-stuff'>
-            <a href='#'>Leagues</a>
+          <Link to='/leagues'>Leagues</Link>
             <a href='#'>Bonspiels</a>
             <a href='#'>Private Parties</a>
           </div>

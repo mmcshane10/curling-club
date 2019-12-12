@@ -1,6 +1,6 @@
 export const initialState = {
   dailyMatches: {},
-  leagues: {
+  memberLeagues: {
     1: {
       day: 'Monday',
       time: '12:00pm',
