@@ -1,8 +1,5 @@
 import React from 'react';
 import withFirebaseAuth from 'react-with-firebase-auth'
-import * as firebase from 'firebase/app';
-import 'firebase/auth';
-import firebaseConfig from './firebaseConfig';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './Navbar';
@@ -17,11 +14,6 @@ class App extends React.Component {
   }
 
   render() {
-    const {
-      user,
-      signOut,
-      signInWithGoogle,
-    } = this.props;
     return (
       <div>
         <Navbar />
@@ -37,7 +29,4 @@ class App extends React.Component {
   }
 }
 
-export default withFirebaseAuth({
-  providers,
-  firebaseAppAuth,
-})(App);
+export default App;
