@@ -9,13 +9,15 @@ class Leagues extends React.Component {
   render() {
     return (
       <div className='leagues row'>
-        {console.log('/////', this.props.memberLeagues)}
+        {console.log('LEAGUES:', this.props.memberLeagues)}
         <h2 className='heading'>Member Leagues</h2>
         {Object.keys(this.props.memberLeagues).map(leagueId => {
           let league = this.props.memberLeagues[leagueId];
+          console.log('ID:', leagueId);
+          
           return (
-            <div className='col s12 m6'>
-              <div key={leagueId} className='card-panel'>
+            <div key={leagueId} className='col s12 m6'>
+              <div className='card-panel'>
                 <h5>{league.day}</h5>
                 <p>{league.time}</p>
                 <p>{league.level}</p>
