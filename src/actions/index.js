@@ -39,3 +39,18 @@ export const receiveDailyResults = dailyMatches => ({
   type: types.RECEIVE_DAILY_MATCHES,
   dailyMatches
 });
+
+// export const signIn = (credentials) => {
+//   return (dispatch, getState, { getFirebase }) => {
+//     const firebase = getFirebase();
+//     firebase.auth().signInWithEmailAndPassword(
+//       credentials.email,
+//       credentials.password
+//     ).then(() => {
+//       dispatch({ type: 'LOGIN_SUCCESS' });
+//     }).catch((err) => {
+//       dispatch({ type: 'LOGIN_ERROR', err });
+//     });
+
+//   }
+// }
