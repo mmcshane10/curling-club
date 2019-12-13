@@ -22,7 +22,7 @@ class SignUp extends Component {
     return (
       <div className='register'>
         <form className="white register-form" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3 heading">Membership Registration</h5>
+          <h5 className="heading">Membership Registration</h5>
           <div className="input-field">
             <input type="email" id='email' placeholder='Email' onChange={this.handleChange} />
           </div>

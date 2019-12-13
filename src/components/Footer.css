@@ -1,22 +1,19 @@
 .footer {
   font-family: 'Quicksand', sans-serif;
-  height: 30vh;
+  height: auto;
   padding: 25px;
   color: white;
   background-color: #4d80e4;
 }
 
 .footer-logo {
+  height: 50%;
   float: right;
-  height: 80%;
-  margin-top: 3%;
-  padding-right: 1%;
-  text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5)
 }
 
 .social-img {
   padding: 5px;
-  height: 5vh;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -30,4 +27,12 @@
 
 .btn-small {
   margin-left: 8px;
+}
+
+input {
+  border: 1px solid #2e279d;
+  height: 1.5em;
+  width: 40%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
