@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './SignUp.css'
 
 class SignUp extends Component {
   constructor(props) {
@@ -24,9 +25,9 @@ class SignUp extends Component {
     }
     render() {
       return (
-        <div>
-          <form className="white" onSubmit={this.handleSubmit}>
-            <h5 className="grey-text text-darken-3">Sign Up</h5>
+        <div className='register'>
+          <form className="white register-form" onSubmit={this.handleSubmit}>
+            <h5 className="grey-text text-darken-3 heading">Membership Registration</h5>
             <div className="input-field">
               <label htmlFor="email">Email</label>
               <input type="email" id='email' onChange={this.handleChange} />
