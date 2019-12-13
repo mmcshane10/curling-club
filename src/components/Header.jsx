@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -9,7 +10,8 @@ function Header() {
           <span className='heading-primary-main'>Evergreen</span>
           <span className='heading-primary-sub'>Curling CLub</span>
         </h1>
-        <a href='#' className='button button-white button-animated'>Become A Member</a>
+        <Link to='/join' className='button button-white button-animated'>Become A Member</Link>
+        
       </div>
     </header>
   );
