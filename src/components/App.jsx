@@ -1,5 +1,4 @@
 import React from 'react';
-import withFirebaseAuth from 'react-with-firebase-auth'
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './Navbar';

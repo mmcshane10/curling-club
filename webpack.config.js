@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 
@@ -8,7 +9,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    resolve(__dirname, 'src') + '/index.jsx'
+    resolve(__dirname, "src") + "/index.jsx"
   ],
 
   output: {
@@ -40,12 +41,17 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        enforce: 'pre',
-        loader: 'eslint-loader',
+        loader: "babel-loader",
         exclude: /node_modules/,
         options: {
-          emitWarning: true,
-          configFile: './.eslintrc.json'
+          presets: [
+            ["@babel/preset-env", { "modules": false }],
+            "@babel/preset-react",
+          ],
+          plugins: [
+            "react-hot-loader/babel",
+            "styled-jsx/babel"
+          ]
         }
       },
       {
@@ -60,30 +66,29 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
+        enforce: "pre",
+        loader: "eslint-loader",
+        exclude: [
+          /node_modules/,
+          /core-logo.png/
+        ],
         options: {
-          presets: [
-            ['es2015', { 'modules': false }],
-            'react',
-          ],
-          plugins: [
-            'react-hot-loader/babel',
-            'styled-jsx/babel'
-          ]
+          emitWarning: true,
+          configFile: "./.eslintrc.json"
         }
       }
     ]
   },
 
   plugins: [
+    new Dotenv(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       template: 'template.ejs',
       appMountId: 'react-app-root',
       title: 'Evergreen Curling Club',
-      filename: resolve(__dirname, 'build', 'index.html'),
+      filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
 };

@@ -1,4 +1,5 @@
 export const initialState = {
+  authError: null,
   dailyMatches: {},
   memberLeagues: {
     1: {
