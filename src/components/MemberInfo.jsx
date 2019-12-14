@@ -1,6 +1,6 @@
 import React from 'react';
 import './MemberInfo.css';
-import Olympics from '../img/Olympics.png'
+import Olympics from '../img/Olympics.png';
 import { Link } from 'react-router-dom';
 
 function MemberInfo() {

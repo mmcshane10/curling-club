@@ -27,7 +27,7 @@ class Leagues extends React.Component {
                 <p><span className="labels">Registration Fee: </span> {league.cost}</p>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     );
@@ -38,7 +38,7 @@ const mapStateToProps = (state) => {
   console.log(state);
   return {
     memberLeagues: state.memberLeagues
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps)(Leagues);

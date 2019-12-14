@@ -8,6 +8,7 @@ import Footer from './Footer';
 import MemberInfo from './MemberInfo';
 import Leagues from './Leagues';
 import SignUp from './SignUp';
+import Bonspiel from './Bonspiel'
 
 class App extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class App extends React.Component {
           <Route exact path='/history' component={History} />
           <Route exact path='/info' component={MemberInfo} />
           <Route exact path='/leagues' component={Leagues} />
+          <Route exact path='/bonspiels' component={Bonspiel} />
           <Route exact path='/join' component={SignUp} />
         </Switch>
         <Footer />

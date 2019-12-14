@@ -51,5 +51,5 @@ export const signIn = (credentials) => {
     }).catch((err) => {
       dispatch({ type: types.LOGIN_ERROR, err });
     });
-  }
-}
+  };
+};

@@ -12,8 +12,8 @@ function Navbar() {
         <li className='dropdown uppercase flow-text'>
           <a href='#' className='dropbtn navhover'>Events</a>
           <div className='dropdown-stuff'>
-          <Link to='/leagues'>Leagues</Link>
-            <a href='#'>Bonspiels</a>
+            <Link to='/leagues'>Leagues</Link>
+            <Link to='/bonspiels'>Bonspiels</Link>
             <a href='#'>Private Parties</a>
           </div>
         </li>
