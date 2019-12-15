@@ -8,6 +8,7 @@ import Footer from './Footer';
 import MemberInfo from './MemberInfo';
 import Leagues from './Leagues';
 import SignUp from './SignUp';
+import SignIn from './SignIn';
 import Bonspiel from './Bonspiel'
 
 class App extends React.Component {
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route exact path='/leagues' component={Leagues} />
           <Route exact path='/bonspiels' component={Bonspiel} />
           <Route exact path='/join' component={SignUp} />
+          <Route exact path='/login' component={SignIn} />
         </Switch>
         <Footer />
       </div>

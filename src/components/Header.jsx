@@ -10,7 +10,7 @@ function Header() {
           <span className='heading-primary-main'>Evergreen</span>
           <span className='heading-primary-sub'>Curling CLub</span>
         </h1>
-        <Link to='/join' className='button button-white button-animated'>Become A Member</Link>
+        <Link to='/login' className='button button-white button-animated'>Member Login</Link>
         
       </div>
     </header>
