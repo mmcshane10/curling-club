@@ -16,15 +16,27 @@ class Leagues extends React.Component {
         <h3 className='heading'>Winter Leagues:</h3>
         {console.log('LEAGUES:', this.props.memberLeagues)}
         {Object.keys(this.props.memberLeagues).map(leagueId => {
-          let league = this.props.memberLeagues[leagueId];          
+          let league = this.props.memberLeagues[leagueId];
+          let registered = Object.entries(league.members).length;
+          let available = league.capacity - registered;
           return (
-            <div key={leagueId} className='col s12 m6'>
+            <div key={leagueId} className='col s12'>
               <div className='card-panel'>
                 <h5 className='day-heading'>{league.day}</h5>
-                <p><span className="labels">Time: </span> {league.time}</p>
-                <p><span className="labels">Skill Level: </span> {league.level}</p>
-                <p><span className="labels"># of Weeks: </span> {league.weeks}</p>
-                <p><span className="labels">Registration Fee: </span> {league.cost}</p>
+                <div className="row">
+                  <div className="col s10">
+                    <p><span className="labels">Time: </span> {league.time}</p>
+                    <p><span className="labels">Skill Level: </span> {league.level}</p>
+                    <p><span className="labels"># of Weeks: </span> {league.weeks}</p>
+                    <p><span className="labels">Registration Fee: </span> {league.cost}</p>
+                  </div>
+                  <div className="col s2 col-right">
+                    <button className='btn red lighten-1'>Register</button>
+                  </div>
+                </div>
+                <div className="bon-stats">
+                  <p><span className="labels">Capacity: {league.capacity}</span></p><p><span className="labels">Registered: {registered}</span></p><p><span className="labels">Available: {available}</span></p>
+                </div>
               </div>
             </div>
           );
