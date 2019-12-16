@@ -1,0 +1,20 @@
+  .parties {
+    font-family: 'Quicksand', sans-serif;
+    padding: 25px;
+    padding-top: 4vh;
+    background-color: #f4f4f4;
+    padding-bottom: 10vh;
+  }
+
+  .row-div {
+    margin-top: 20px;
+  }
+
+  .party-img {
+  float: right;
+  height: 50vh;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 15px;
+  border: 10px solid #46b3e6;
+}

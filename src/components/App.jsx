@@ -9,7 +9,8 @@ import MemberInfo from './MemberInfo';
 import Leagues from './Leagues';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-import Bonspiel from './Bonspiel'
+import Bonspiel from './Bonspiel';
+import Parties from './Parties';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route exact path='/bonspiels' component={Bonspiel} />
           <Route exact path='/join' component={SignUp} />
           <Route exact path='/login' component={SignIn} />
+          <Route exact path='/parties' component={Parties} />
         </Switch>
         <Footer />
       </div>
