@@ -17,21 +17,26 @@ class Bonspiel extends React.Component {
           let registered = Object.entries(bonspiel.members).length;
           let available = bonspiel.capacity - registered;
           return (
-            <div key={bonspielId} className='col s12'>
-              <div className='card-panel'>
-                <h5 className='day-heading'>{bonspiel.name}</h5>
-                <div className="row">
-                  <div className="col s10">
-                    <p><span className="labels">Start Date: </span> {bonspiel.startDate}</p>
-                    <p><span className="labels">End Date: </span> {bonspiel.endDate}</p>
-                    <p><span className="labels">Cost: </span> {bonspiel.cost}</p>
+            <div key={bonspielId} className='col s12 flip-card'>
+              <div className="flip-card-inner">
+                <div className="card-front">
+                  <h5 className='day-heading'>{bonspiel.name}</h5>
+                  <div className="row">
+                    <div className="col s12">
+                      <p><span className="labels">Start Date: </span> {bonspiel.startDate}</p>
+                      <p><span className="labels">End Date: </span> {bonspiel.endDate}</p>
+                      <p><span className="labels">Cost: </span> {bonspiel.cost}</p>
+                    </div>
                   </div>
-                  <div className="col s2 col-right">
-                    <button className='btn red lighten-1'>Register</button>
+                  <div className="bon-stats">
+                    <p><span className="labels">Capacity: {bonspiel.capacity}</span></p><p><span className="labels">Registered: {registered}</span></p><p><span className="labels">Available: {available}</span></p>
                   </div>
                 </div>
-                <div className="bon-stats">
-                  <p><span className="labels">Capacity: {bonspiel.capacity}</span></p><p><span className="labels">Registered: {registered}</span></p><p><span className="labels">Available: {available}</span></p>
+                <div className="card-back">
+                  <p>{bonspiel.description}</p>
+                  <div className="reg-but">
+                    <button className='btn red lighten-1'>Register</button>
+                  </div>
                 </div>
               </div>
             </div>
