@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './SignIn.css';
 import { Link } from 'react-router-dom';
+import { logInUser } from '../actions'
 
 class SignIn extends Component {
   state = {
@@ -14,8 +15,9 @@ class SignIn extends Component {
     })
   }
   handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.signIn(this.state)
+    event.preventDefault();
+    logInUser(this.state.email, this.state.password)();
+    console.log(this.state);
   }
   render() {
     return (

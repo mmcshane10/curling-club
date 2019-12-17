@@ -2,13 +2,13 @@ import { combineReducers } from 'redux';
 import dailyMatchesReducer from './dailyMatchesReducer';
 import memberLeaguesReducer from './memberLeaguesReducer';
 import memberBonspielsReducer from './memberBonspielsReducer';
-import authReducer from './authReducer';
+import userReducer from './userReducer';
 
 const rootReducer = combineReducers({
   dailyMatches: dailyMatchesReducer,
   memberLeagues: memberLeaguesReducer,
   memberBonspiels: memberBonspielsReducer,
-  auth: authReducer
+  user: userReducer
 });
 
 export default rootReducer;
