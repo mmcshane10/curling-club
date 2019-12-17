@@ -1,7 +1,7 @@
 import React from 'react';
 import './History.css';
 import ECC from '../img/ECCice.jpg';
-import Scoreboard from '../img/scoreboard.jpg'
+import Scoreboard from '../img/scoreboard.jpg';
 
 function History() {
   return (

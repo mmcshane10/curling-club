@@ -36,7 +36,7 @@ function Parties() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Parties;

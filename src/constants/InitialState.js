@@ -1,8 +1,8 @@
 export const initialState = {
   currentUser: {
-  email: null,
-  displayName: null,
-  uid: null,
+    email: null,
+    displayName: null,
+    uid: null,
   },
   dailyMatches: {},
   memberLeagues: {

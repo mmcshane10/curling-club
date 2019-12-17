@@ -47,9 +47,9 @@ class App extends React.Component {
 const mapDispatchToProps = dispatch => {
   return {
     listenForUser: () => {
-      dispatch(watchAuthStateChanged())
+      dispatch(watchAuthStateChanged());
     },
-  }
-}
+  };
+};
 
 export default connect(null, mapDispatchToProps)(App);

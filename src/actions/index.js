@@ -7,12 +7,11 @@ import firebaseConfig from '../firebaseConfig';
 firebase.initializeApp(firebaseConfig);
 
 export function sendNewUserToFireBase(email, password, displayName) {
-  console.log(email, password, displayName);
   return () => firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
     var user = firebase.auth().currentUser;
     user.updateProfile({
       displayName: displayName
-    })
+    });
   }).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -30,7 +29,7 @@ export function logInUser(email, password) {
 
 export function logOutUser() {
   return () => firebase.auth().signOut().then(function () {
-    console.log("sign out successfull");
+    console.log('sign out successfull');
     console.log(state);
   }).catch(function (error) {
     var errorCode = error.code;
@@ -42,10 +41,10 @@ export function logOutUser() {
 export function watchAuthStateChanged() {
   return function (dispatch) {
     firebase.auth().onAuthStateChanged(function (user) {
-      console.log("the user is", user);
+      console.log('the user is', user);
       dispatch(sendUserToRedux(user));
-    })
-  }
+    });
+  };
 }
 
 export const sendUserToRedux = (user) => {
@@ -53,13 +52,13 @@ export const sendUserToRedux = (user) => {
     type: types.NEW_USER,
     user
   };
-}
+};
 
 export const removeUserState = () => {
   return {
     type: types.LOG_OUT,
   };
-}
+};
 
 export function fetchDailyResults() {
   return function (dispatch) {

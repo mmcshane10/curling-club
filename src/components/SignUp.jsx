@@ -15,12 +15,11 @@ class SignUp extends Component {
       [event.target.id]: event.target.value
     })
   }
-  
+
   handleSubmit = (event) => {
     event.preventDefault();
     let displayName = this.state.firstName + ' ' + this.state.lastName;
     sendNewUserToFireBase(this.state.email, this.state.password, displayName)();
-    console.log(this.state);
   }
   render() {
     return (
