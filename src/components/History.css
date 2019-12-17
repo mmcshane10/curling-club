@@ -15,3 +15,12 @@
   margin-left: 15px;
   border: 10px solid #46b3e6;
 }
+
+.scoreboard-img {
+  float: left;
+  height: 65vh;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 15px;
+  border: 10px solid #46b3e6;
+}

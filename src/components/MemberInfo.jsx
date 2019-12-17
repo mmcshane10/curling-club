@@ -8,7 +8,7 @@ function MemberInfo() {
     <div className='member-info'>
       <div>
         <h2 className='heading'>Become a Member and Curl with ECC:</h2>
-        <p className='flow-text'>1. Join ECC as a new member using the online <Link to='/join'><span className='link'>link</span></Link>.</p>
+        <p className='flow-text'>1. Join ECC as a new member using the online <a target='_blank' href="https://www.youtube.com/watch?v=PoD9gVdeIS4">link</a>.</p>
         <p className='flow-text'>2. Wait for ECC to contact you with your new website credentials.  This is a manual process carried out by a volunteer and may take a few days.</p>
         <p className='flow-text'>3. Log-in to ECCs website and begin exploring the leagues and clinics (both seasonal) that are available to you.  Registration for all member events and leagues may be limited. Membership does not guarantee a spot in events or leagues.</p>
         <p className='flow-text'>Memberships run $85 for adults, $45 for youths for the curling season.  Half-year memberships run $50 for adults and $30 for youths.</p>
