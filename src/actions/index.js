@@ -16,8 +16,8 @@ export function sendNewUserToFireBase(email, password) {
 }
 
 export function logInUser(email, password) {
+  console.log(email, password);
   return () => firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
-    // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorCode, errorMessage);
@@ -87,17 +87,3 @@ export const receiveDailyResults = dailyMatches => ({
   type: types.RECEIVE_DAILY_MATCHES,
   dailyMatches
 });
-
-export const signIn = (credentials) => {
-  return (dispatch, getState, { getFirebase }) => {
-    const firebase = getFirebase();
-    firebase.auth().signInWithEmailAndPassword(
-      credentials.email,
-      credentials.password
-    ).then(() => {
-      dispatch({ type: types.LOGIN_SUCCESS });
-    }).catch((err) => {
-      dispatch({ type: types.LOGIN_ERROR, err });
-    });
-  };
-};
