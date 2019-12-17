@@ -4,6 +4,12 @@ const { initialState, types } = constants;
 const userReducer = (state = initialState.currentUser, action) => {
   let newState;
   switch (action.type) {
+    case types.LOG_OUT:
+      return {
+        ...state,
+        email: null,
+        uid: null
+      }
     case types.NEW_USER:
       if (action.user != null) {
         return {
@@ -18,7 +24,6 @@ const userReducer = (state = initialState.currentUser, action) => {
       default:
         return state;
       }
-      console.log(newState);
   }
 
 export default userReducer;

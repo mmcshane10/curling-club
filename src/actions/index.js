@@ -27,6 +27,7 @@ export function logInUser(email, password) {
 export function logOutUser() {
   return () => firebase.auth().signOut().then(function () {
     console.log("sign out successfull");
+    dispatch(removeUserState());
   }).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -47,6 +48,12 @@ export const sendUserToRedux = (user) => {
   return {
     type: types.NEW_USER,
     user
+  };
+}
+
+export const removeUserState = () => {
+  return {
+    type: types.LOG_OUT,
   };
 }
 

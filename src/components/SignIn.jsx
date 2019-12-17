@@ -19,6 +19,7 @@ class SignIn extends Component {
     logInUser(this.state.email, this.state.password)();
     console.log(this.state);
   }
+  
   render() {
     return (
       <div className='register'>
