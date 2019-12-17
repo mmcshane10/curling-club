@@ -8,8 +8,8 @@ firebase.initializeApp(firebaseConfig);
 
 export function sendNewUserToFireBase(email, password, displayName) {
   return () => firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
-    var user = firebase.auth().currentUser;
-    user.updateProfile({
+    var currentUser = firebase.auth().currentUser;
+    currentUser.updateProfile({
       displayName: displayName
     });
   }).catch(function (error) {
@@ -40,17 +40,17 @@ export function logOutUser() {
 
 export function watchAuthStateChanged() {
   return function (dispatch) {
-    firebase.auth().onAuthStateChanged(function (user) {
-      console.log('the user is', user);
-      dispatch(sendUserToRedux(user));
+    firebase.auth().onAuthStateChanged(function (currentUser) {
+      console.log('the user is', currentUser);
+      dispatch(sendUserToRedux(currentUser));
     });
   };
 }
 
-export const sendUserToRedux = (user) => {
+export const sendUserToRedux = (currentUser) => {
   return {
     type: types.NEW_USER,
-    user,
+    currentUser,
   };
 };
 

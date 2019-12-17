@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   dailyMatches: dailyMatchesReducer,
   memberLeagues: memberLeaguesReducer,
   memberBonspiels: memberBonspielsReducer,
-  user: userReducer
+  currentUser: userReducer
 });
 
 export default rootReducer;
