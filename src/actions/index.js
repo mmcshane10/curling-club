@@ -6,9 +6,14 @@ import firebaseConfig from '../firebaseConfig';
 
 firebase.initializeApp(firebaseConfig);
 
-export function sendNewUserToFireBase(email, password) {
-  console.log(email, password);
-  return () => firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+export function sendNewUserToFireBase(email, password, displayName) {
+  console.log(email, password, displayName);
+  return () => firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
+    var user = firebase.auth().currentUser;
+    user.updateProfile({
+      displayName: displayName
+    })
+  }).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorCode, errorMessage);
@@ -16,7 +21,6 @@ export function sendNewUserToFireBase(email, password) {
 }
 
 export function logInUser(email, password) {
-  console.log(email, password);
   return () => firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -27,7 +31,7 @@ export function logInUser(email, password) {
 export function logOutUser() {
   return () => firebase.auth().signOut().then(function () {
     console.log("sign out successfull");
-    dispatch(removeUserState());
+    console.log(state);
   }).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;

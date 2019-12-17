@@ -22,7 +22,7 @@ class Navbar extends React.Component {
 
   handleSignOut = () => {
     logOutUser()();
-    console.log(this.currentUser);
+    console.log('current user is:', this.currentUser);
   }
 
   render() {

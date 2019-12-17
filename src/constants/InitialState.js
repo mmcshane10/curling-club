@@ -1,6 +1,7 @@
 export const initialState = {
   currentUser: {
   email: null,
+  displayName: null,
   uid: null,
   },
   dailyMatches: {},
