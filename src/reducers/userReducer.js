@@ -20,6 +20,7 @@ const userReducer = (state = initialState, action) => {
         }
         newState = Object.assign({}, state, { ...userInfo });
       }
+      console.log(newState);
       return newState;
     default:
       return state;

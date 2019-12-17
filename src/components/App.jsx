@@ -11,10 +11,16 @@ import SignUp from './SignUp';
 import SignIn from './SignIn';
 import Bonspiel from './Bonspiel';
 import Parties from './Parties';
+import { watchAuthStateChanged } from '../actions';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+  }
+
+  componentWillMount() {
+    this.props.listenForUser();
   }
 
   render() {
@@ -38,4 +44,12 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    listenForUser: () => {
+      dispatch(watchAuthStateChanged())
+    },
+  }
+}
+
+export default connect(null, mapDispatchToProps)(App);
