@@ -1,30 +1,24 @@
 import constants from './../constants';
 const { initialState, types } = constants;
 
-const userReducer = (state = initialState, action) => {
+const userReducer = (state = initialState.currentUser, action) => {
   let newState;
-  let userInfo;
   switch (action.type) {
     case types.NEW_USER:
       if (action.user != null) {
-        userInfo = {
+        return {
+          ...state,
           email: action.user['email'],
-          uid: action.user['uid']
+          uid: action.user['uid'],
         }
-        newState = Object.assign({}, state, { ...userInfo });
       }
       else {
-        userInfo = {
-          email: null,
-          uid: null
-        }
-        newState = Object.assign({}, state, { ...userInfo });
+        return state;
+      }
+      default:
+        return state;
       }
       console.log(newState);
-      return newState;
-    default:
-      return state;
   }
-}
 
 export default userReducer;

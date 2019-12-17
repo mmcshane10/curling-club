@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Logo from '../img/logo.jpg';
-
+import { connect } from 'react-redux';
 
 function Navbar() {
   return (
@@ -26,6 +26,8 @@ function Navbar() {
           </div>
         </li>
         <li className='navhover uppercase flow-text'><Link to='/results'>Results</Link></li>
+        
+        <li className='navhover uppercase flow-text'><Link to='/'>Profile</Link></li>
         <img className='logoImg' src={Logo} />
       </ul>
       <hr/>
@@ -33,4 +35,10 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.currentUser
+  }
+}
+
+export default connect(mapStateToProps)(Navbar)
