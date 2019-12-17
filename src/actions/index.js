@@ -50,7 +50,7 @@ export function watchAuthStateChanged() {
 export const sendUserToRedux = (user) => {
   return {
     type: types.NEW_USER,
-    user
+    user,
   };
 };
 

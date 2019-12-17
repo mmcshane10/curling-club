@@ -11,6 +11,7 @@ import SignUp from './SignUp';
 import SignIn from './SignIn';
 import Bonspiel from './Bonspiel';
 import Parties from './Parties';
+import Profile from './UserProfile';
 import { watchAuthStateChanged } from '../actions';
 import { connect } from 'react-redux';
 
@@ -37,6 +38,7 @@ class App extends React.Component {
           <Route exact path='/join' component={SignUp} />
           <Route exact path='/login' component={SignIn} />
           <Route exact path='/parties' component={Parties} />
+          <Route exact path='/profile' component={Profile} />
         </Switch>
         <Footer />
       </div>

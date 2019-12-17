@@ -35,7 +35,7 @@ const Navbar = (props) => {
         <li className='navhover uppercase flow-text'><Link to='/results'>Results</Link></li>
 
         <li className='dropdown uppercase flow-text'>
-          <Link to='/'>Profile</Link>
+          <Link to='/profile'>Profile</Link>
           <div className='dropdown-stuff'>
             <Link to='/' onClick={() => handleSignOut()}>Sign Out</Link>
           </div>

@@ -2,9 +2,9 @@ import constants from './../constants';
 const { initialState, types } = constants;
 
 const userReducer = (state = initialState.currentUser, action) => {
-  let newState;
   switch (action.type) {
     case types.NEW_USER:
+      console.log('reducer log:', action.user)
       if (action.user != null) {
         return {
           ...state,
