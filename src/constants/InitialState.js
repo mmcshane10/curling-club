@@ -1,5 +1,6 @@
 export const initialState = {
-  authError: null,
+  userEmail: null,
+  uid: null,
   dailyMatches: {},
   memberLeagues: {
     1: {

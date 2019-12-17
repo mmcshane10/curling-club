@@ -1,6 +1,54 @@
 import * as types from './../constants/ActionTypes';
 import Moment from 'moment';
 import { v4 } from 'uuid';
+import firebase from 'firebase';
+import firebaseConfig from '../firebaseConfig';
+
+firebase.initializeApp(firebaseConfig);
+
+export function sendNewUserToFireBase(email, password) {
+  console.log(email, password);
+  return () => firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorCode, errorMessage);
+  });
+}
+
+export function logInUser(email, password) {
+  return () => firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorCode, errorMessage);
+  });
+}
+
+export function logOutUser() {
+  return () => firebase.auth().signOut().then(function () {
+    console.log("sign out successfull");
+  }).catch(function (error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorCode, errorMessage);
+  });
+}
+
+export function watchAuthStateChanged() {
+  return function (dispatch) {
+    firebase.auth().onAuthStateChanged(function (user) {
+      console.log("the user is", user);
+      dispatch(sendUserToRedux(user));
+    })
+  }
+}
+
+export const sendUserToRedux = (user) => {
+  return {
+    type: types.NEW_USER,
+    user
+  };
+}
 
 export function fetchDailyResults() {
   return function (dispatch) {

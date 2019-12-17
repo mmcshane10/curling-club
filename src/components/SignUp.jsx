@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './SignUp.css'
+import './SignUp.css';
+import { sendNewUserToFireBase } from '../actions'
 
 class SignUp extends Component {
   state = {
@@ -16,6 +17,7 @@ class SignUp extends Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
+    sendNewUserToFireBase(this.state.email, this.state.password)();
     console.log(this.state);
   }
   render() {
