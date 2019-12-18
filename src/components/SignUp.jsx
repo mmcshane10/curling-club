@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SignUp.css';
-import { sendNewUserToFireBase } from '../actions'
+import { sendNewUserToFireBase } from '../actions';
 
 class SignUp extends Component {
   state = {
