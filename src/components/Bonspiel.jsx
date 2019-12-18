@@ -1,6 +1,7 @@
 import React from 'react';
 import './Bonspiel.css';
 import { connect } from 'react-redux';
+import { addMemberToBonspiel } from '../actions';
 
 class Bonspiel extends React.Component {
 
@@ -34,7 +35,7 @@ class Bonspiel extends React.Component {
                 <div className="card-back">
                   <p>{bonspiel.description}</p>
                   <div className="reg-but">
-                    <button className='btn red lighten-1'>Register</button>
+                    <button onClick={() => this.props.onBonspielClick(bonspiel.bid, this.props.currentUser)} className='btn red lighten-1'>Register</button>
                   </div>
                 </div>
               </div>
@@ -50,8 +51,14 @@ const mapStateToProps = (state) => {
   console.log(state);
   return {
     memberBonspiels: state.memberBonspiels,
-    members: state.memberBonspiels.members
+    currentUser: state.currentUser
   };
 };
 
-export default connect(mapStateToProps)(Bonspiel);
+const mapDispatchToProps = dispatch => {
+  return {
+    onBonspielClick: (id, currentUser) => dispatch(addMemberToBonspiel(id, currentUser)),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Bonspiel);

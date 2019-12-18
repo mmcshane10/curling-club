@@ -103,3 +103,9 @@ export const addMemberToLeague = (id, currentUser) => ({
   id,
   currentUser
 });
+
+export const addMemberToBonspiel = (id, currentUser) => ({
+  type: types.ADD_MEMBER_TO_BONSPIEL,
+  id,
+  currentUser
+});
