@@ -50,7 +50,6 @@ class Leagues extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     memberLeagues: state.memberLeagues,
     currentUser: state.currentUser

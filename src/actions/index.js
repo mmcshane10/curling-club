@@ -41,7 +41,6 @@ export function logOutUser() {
 export function watchAuthStateChanged() {
   return function (dispatch) {
     firebase.auth().onAuthStateChanged(function (currentUser) {
-      console.log('the user is', currentUser);
       dispatch(sendUserToRedux(currentUser));
     });
   };

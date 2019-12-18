@@ -36,6 +36,7 @@ class Bonspiel extends React.Component {
                   <p>{bonspiel.description}</p>
                   <div className="reg-but">
                     <button onClick={() => this.props.onBonspielClick(bonspiel.bid, this.props.currentUser)} className='btn red lighten-1'>Register</button>
+                    <button className='btn blue lighten-1'>Attendees</button>
                   </div>
                 </div>
               </div>
@@ -48,7 +49,6 @@ class Bonspiel extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     memberBonspiels: state.memberBonspiels,
     currentUser: state.currentUser
