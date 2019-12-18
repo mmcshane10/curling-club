@@ -27,18 +27,22 @@ class UserProfile extends React.Component {
     })
 
     return (
-      <div className="user-profile">
+      <div className="user-profile flow-text">
         <h2 className='heading greeting'>Hello {this.props.currentUser.displayName}</h2>
-
-        <h5>Your Registered Leagues</h5>
-        <ol>
-          {userLeagues.map(event => <li>{event}</li>)}
-        </ol>
-
-        <h5>Your Registered Bonspiels</h5>
-        <ol>
-          {userBonspiels.map(bon => <li>{bon}</li>)}
-        </ol>
+        <div className="row">
+          <div className="col s6 profile-column">
+            <h5 className='heading'>Your Registered Leagues</h5>
+            <ul>
+              {userLeagues.map(event => <li className='list-item'>{event}</li>)}
+            </ul>
+          </div>
+          <div className="col s6 profile-column">
+            <h5 className='heading'>Your Registered Bonspiels</h5>
+            <ul>
+              {userBonspiels.map(bon => <li className='list-item'>{bon}</li>)}
+            </ul>
+          </div>
+        </div>
       </div>
     )
   }
