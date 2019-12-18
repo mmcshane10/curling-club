@@ -97,3 +97,8 @@ export const receiveDailyResults = dailyMatches => ({
   type: types.RECEIVE_DAILY_MATCHES,
   dailyMatches
 });
+
+export const addMemberToLeague = id => ({
+  type: types.ADD_MEMBER_TO_LEAGUE,
+  id
+});

@@ -13,7 +13,8 @@ export const initialState = {
       weeks: '8',
       cost: '$184',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 1
     },
     2: {
       day: 'Monday',
@@ -22,7 +23,8 @@ export const initialState = {
       weeks: '10',
       cost: '$230',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 2
     },
     3: {
       day: 'Tuesday',
@@ -31,7 +33,8 @@ export const initialState = {
       weeks: '12',
       cost: '$276',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 3
     },
     4: {
       day: 'Wednesday',
@@ -40,7 +43,8 @@ export const initialState = {
       weeks: '10',
       cost: '$230',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 4
     },
     5: {
       day: 'Wednesday',
@@ -49,7 +53,8 @@ export const initialState = {
       weeks: '12',
       cost: '$276',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 5
     },
     6: {
       day: 'Thursday',
@@ -58,7 +63,8 @@ export const initialState = {
       weeks: '12',
       cost: '$276',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 6
     },
     7: {
       day: 'Friday',
@@ -67,7 +73,8 @@ export const initialState = {
       weeks: '10',
       cost: '$230',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 7
     },
     8: {
       day: 'Saturday',
@@ -76,7 +83,8 @@ export const initialState = {
       weeks: '8',
       cost: '$184',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 8
     },
     9: {
       day: 'Saturday',
@@ -85,7 +93,8 @@ export const initialState = {
       weeks: '10',
       cost: '$230',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 9
     },
     10: {
       day: 'Sunday',
@@ -94,7 +103,8 @@ export const initialState = {
       weeks: '12',
       cost: '$276',
       members: {},
-      capacity: 24
+      capacity: 24,
+      lid: 10
     },
   },
   memberBonspiels: {
