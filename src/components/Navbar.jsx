@@ -7,10 +7,21 @@ import { logOutUser } from '../actions'
 
 const Navbar = (props) => {
 
+  const { currentUser } = props;
+  
   function handleSignOut() {
     logOutUser()();
     alert('Sign out successful!');
   }
+  
+  let profileTab = <li className='dropdown uppercase flow-text'>
+    <Link to='/profile'>Profile</Link>
+    <div className='dropdown-stuff'>
+      <Link to='/' onClick={() => handleSignOut()}>Sign Out</Link>
+    </div>
+  </li>
+
+let userSignedIn = currentUser.email ? profileTab : null;
 
   return (
     <div className='nav'>
@@ -33,13 +44,14 @@ const Navbar = (props) => {
           </div>
         </li>
         <li className='navhover uppercase flow-text'><Link to='/results'>Results</Link></li>
+        {userSignedIn}
 
-        <li className='dropdown uppercase flow-text'>
+        {/* <li className='dropdown uppercase flow-text'>
           <Link to='/profile'>Profile</Link>
           <div className='dropdown-stuff'>
             <Link to='/' onClick={() => handleSignOut()}>Sign Out</Link>
           </div>
-        </li>
+        </li> */}
 
         <img className='logoImg' src={Logo} />
       </ul>
