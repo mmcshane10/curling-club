@@ -8,9 +8,14 @@ class UserProfile extends React.Component {
   }
 
   render() {
-    return(
+
+    return (
       <div className="user-profile">
-        <h1>Hello {this.props.currentUser.displayName}</h1>
+        <h2 className='heading greeting'>Hello {this.props.currentUser.displayName}</h2>
+
+        <h5>Your Registered Events</h5>
+        <ul>
+        </ul>
       </div>
     )
   }
@@ -18,7 +23,9 @@ class UserProfile extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    currentUser: state.currentUser
+    currentUser: state.currentUser,
+    memberLeagues: state.memberLeagues,
+    memberBonspiels: state.memberBonspiels
   }
 }
 

@@ -58,7 +58,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
   return {
     onBonspielClick: (id, currentUser) => dispatch(addMemberToBonspiel(id, currentUser)),
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Bonspiel);

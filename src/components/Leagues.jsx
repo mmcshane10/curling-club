@@ -4,9 +4,6 @@ import './Leagues.css';
 import { addMemberToLeague } from '../actions';
 
 class Leagues extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
 
@@ -37,6 +34,7 @@ class Leagues extends React.Component {
                   </div>
                   <div className="col s2 col-right">
                     <button onClick={() => this.props.onRegisterClick(league.lid, this.props.currentUser)} className='btn red lighten-1'>Register</button>
+                    <button className='btn blue lighten-1'>Attendees</button>
                   </div>
                 </div>
                 <div className="bon-stats">
@@ -62,7 +60,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
   return {
     onRegisterClick: (id, currentUser) => dispatch(addMemberToLeague(id, currentUser)),
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Leagues);

@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Logo from '../img/logo.jpg';
 import { connect } from 'react-redux';
-import { logOutUser } from '../actions'
+import { logOutUser } from '../actions';
 
 const Navbar = (props) => {
 
@@ -19,9 +19,9 @@ const Navbar = (props) => {
     <div className='dropdown-stuff'>
       <Link to='/' onClick={() => handleSignOut()}>Sign Out</Link>
     </div>
-  </li>
+  </li>;
 
-let userSignedIn = currentUser.email ? profileTab : null;
+  let userSignedIn = currentUser.email ? profileTab : null;
 
   return (
     <div className='nav'>
@@ -57,13 +57,13 @@ let userSignedIn = currentUser.email ? profileTab : null;
       </ul>
       <hr />
     </div>
-  )
-}
+  );
+};
 
 const mapStateToProps = (state) => {
   return {
     currentUser: state.currentUser
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps)(Navbar)
+export default connect(mapStateToProps)(Navbar);

@@ -14,3 +14,13 @@
   font-weight: bold;
   margin-right: 1%;
 }
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-right button {
+  margin-bottom: 8%;
+  width: 100%;
+}
