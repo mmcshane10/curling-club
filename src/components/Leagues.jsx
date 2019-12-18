@@ -8,6 +8,11 @@ class Leagues extends React.Component {
   }
 
   render() {
+
+    let registerButton = <button className='btn red lighten-1'>Register</button>
+
+    let userSignedIn = this.props.currentUser.email ? registerButton : null;
+
     return (
       <div className='leagues row'>
         <h2 className='heading'>Member Leagues</h2>
@@ -30,7 +35,7 @@ class Leagues extends React.Component {
                     <p><span className="labels">Registration Fee: </span> {league.cost}</p>
                   </div>
                   <div className="col s2 col-right">
-                    <button className='btn red lighten-1'>Register</button>
+                    {userSignedIn}
                   </div>
                 </div>
                 <div className="bon-stats">
@@ -48,7 +53,8 @@ class Leagues extends React.Component {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-    memberLeagues: state.memberLeagues
+    memberLeagues: state.memberLeagues,
+    currentUser: state.currentUser
   };
 };
 
