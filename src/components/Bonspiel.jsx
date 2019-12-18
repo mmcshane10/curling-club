@@ -7,7 +7,7 @@ class Bonspiel extends React.Component {
 
   render() {
     return (
-      <div className='bonspiels row'>
+      <div className='bonspiels row flow-text'>
         <h2 className='heading'>Bonspiels</h2>
         <p className='paragraph'>A bonspiel is a curling tournament held over a party-filled weekend. Bonspiels usually include a Saturday banquet, at least 3 games of curling, themes, costumes, drawings, prizes, and other party activities. Unless specifically stated otherwise, they are open to all types of teams and all levels of curlers.</p>
         <p className='paragraph'>Bonspiel committee reserves the right to make changes to format, number of teams, close date, etc. based on circumstances including but not limited to volunteers, club schedule, to any bonspiel.</p>
