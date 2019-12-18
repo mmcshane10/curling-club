@@ -36,7 +36,7 @@ class Leagues extends React.Component {
                     <p><span className="labels">Registration Fee: </span> {league.cost}</p>
                   </div>
                   <div className="col s2 col-right">
-                    <button onClick={() => this.props.onRegisterClick(league.lid)} className='btn red lighten-1'>Register</button>
+                    <button onClick={() => this.props.onRegisterClick(league.lid, this.props.currentUser)} className='btn red lighten-1'>Register</button>
                   </div>
                 </div>
                 <div className="bon-stats">
@@ -61,7 +61,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onRegisterClick: (id) => dispatch(addMemberToLeague(id)),
+    onRegisterClick: (id, currentUser) => dispatch(addMemberToLeague(id, currentUser)),
   }
 }
 

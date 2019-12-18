@@ -12,7 +12,7 @@ export const initialState = {
       level: 'Beginner',
       weeks: '8',
       cost: '$184',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 1
     },
@@ -22,7 +22,7 @@ export const initialState = {
       level: 'Beginner',
       weeks: '10',
       cost: '$230',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 2
     },
@@ -32,7 +32,7 @@ export const initialState = {
       level: 'Advanced',
       weeks: '12',
       cost: '$276',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 3
     },
@@ -42,7 +42,7 @@ export const initialState = {
       level: 'Intermediate',
       weeks: '10',
       cost: '$230',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 4
     },
@@ -52,7 +52,7 @@ export const initialState = {
       level: 'Beginner',
       weeks: '12',
       cost: '$276',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 5
     },
@@ -62,7 +62,7 @@ export const initialState = {
       level: 'Beginner',
       weeks: '12',
       cost: '$276',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 6
     },
@@ -72,7 +72,7 @@ export const initialState = {
       level: 'Intermediate',
       weeks: '10',
       cost: '$230',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 7
     },
@@ -82,7 +82,7 @@ export const initialState = {
       level: 'Beginner',
       weeks: '8',
       cost: '$184',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 8
     },
@@ -92,7 +92,7 @@ export const initialState = {
       level: 'Intermediate',
       weeks: '10',
       cost: '$230',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 9
     },
@@ -102,7 +102,7 @@ export const initialState = {
       level: 'Advanced',
       weeks: '12',
       cost: '$276',
-      members: {},
+      members: [],
       capacity: 24,
       lid: 10
     },
