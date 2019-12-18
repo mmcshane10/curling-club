@@ -4,7 +4,6 @@ const { initialState, types } = constants;
 const userReducer = (state = initialState.currentUser, action) => {
   switch (action.type) {
     case types.NEW_USER:
-      console.log('reducer log:', action.currentUser)
       if (action.currentUser != null) {
         return {
           ...state,

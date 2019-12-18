@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './SignIn.css';
 import { Link } from 'react-router-dom';
-import { logInUser } from '../actions'
+import { logInUser } from '../actions';
+import { Redirect } from 'react-router-dom';
 
 class SignIn extends Component {
   state = {
     email: '',
-    password: ''
+    password: '',
+    redirect: false
   }
   handleChange = (e) => {
     this.setState({
@@ -17,12 +19,13 @@ class SignIn extends Component {
   handleSubmit = (e) => {
     event.preventDefault();
     logInUser(this.state.email, this.state.password)();
-    console.log(this.state);
+    this.setState({...this.state, redirect: true})
   }
   
   render() {
     return (
       <div className='register'>
+        {this.state.redirect ? <Redirect to='/profile' /> : ''}
         <form className='white login-form' onSubmit={this.handleSubmit}>
           <h5 className='heading'>Sign In</h5>
           <div className='input-field'>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './SignUp.css';
 import { sendNewUserToFireBase } from '../actions';
+import { Redirect } from 'react-router-dom';
 
 class SignUp extends Component {
   state = {
@@ -8,6 +9,7 @@ class SignUp extends Component {
     lastName: '',
     email: '',
     password: '',
+    redirect: false
   }
 
   handleChange = (event) => {
@@ -20,10 +22,12 @@ class SignUp extends Component {
     event.preventDefault();
     let displayName = this.state.firstName + ' ' + this.state.lastName;
     sendNewUserToFireBase(this.state.email, this.state.password, displayName)();
+    this.setState({ ...this.state, redirect: true })
   }
   render() {
     return (
       <div className='register'>
+        {this.state.redirect ? <Redirect to='/profile' /> : ''}
         <form className="white register-form" onSubmit={this.handleSubmit}>
           <h5 className="heading">Membership Registration</h5>
           <div className="input-field">

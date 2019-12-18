@@ -28,7 +28,7 @@ let userSignedIn = currentUser.email ? profileTab : null;
       <ul>
         <li className='navhover uppercase flow-text'><Link to='/'>Home</Link></li>
         <li className='dropdown uppercase flow-text'>
-          <a href='#' className='dropbtn navhover'>Events</a>
+          <li className='dropbtn navhover'>Events</li>
           <div className='dropdown-stuff'>
             <Link to='/leagues'>Leagues</Link>
             <Link to='/bonspiels'>Bonspiels</Link>
@@ -36,7 +36,7 @@ let userSignedIn = currentUser.email ? profileTab : null;
           </div>
         </li>
         <li className='dropdown uppercase flow-text'>
-          <a href='#' className='dropbtn navhover'>Evergreen CC</a>
+          <li className='dropbtn navhover'>Evergreen CC</li>
           <div className='dropdown-stuff'>
             <Link to='/history'>History</Link>
             <Link to='/info'>Membership Info</Link>
