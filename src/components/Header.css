@@ -58,18 +58,18 @@ body {
 
 .heading-primary-main {
   display: block;
-  font-size: 100px;
+  font-size: 160px;
   font-weight: 400;
-  letter-spacing: 40px;
+  letter-spacing: 48px;
   animation: moveInLeft 2s ease-out;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 400;
-  letter-spacing: 20px;
+  letter-spacing: 22px;
   animation: moveInRight 2s ease-out;
 }
 

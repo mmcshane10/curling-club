@@ -6,6 +6,10 @@
     padding-bottom: 10vh;
   }
 
+  .parties h5 {
+    font-weight: bold;
+  }
+
   .row-div {
     margin-top: 20px;
   }
