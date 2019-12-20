@@ -1,37 +1,32 @@
 # _Evergreen Curling Club Website Redesign_
 
-#### _Remaking Evergreen Curling Club's Website; 6-December-2019_
+#### _Remaking Evergreen Curling Club's Website; 20-December-2019_
 
 #### By _**Mike McShane**_
 
 ## Description
 
-The site will allow members of the club to register for leagues, clinics, teams, as well as provide a calendar of events and other club-related news. So far, the site is just comprosed of static elements.
+Capstone project during Epicodus schooling. I've remade the website for Evergreen Curling Club, the only dedicated curling facility in the state of Oregon. Users to the site can create accounts with the club, register for different events, and learn more about the club itself.
 
-Friday Timeline:
-
-## Features the project requires to meet this purpose or goal:
-
-* Authentication so members can create an account and view the site.
-* Ability for users to join and register for leagues/teams/bonspiels/etc.
-* Advanced CSS styling - including responsive design and animations
-
-## Tools, frameworks, libraries, APIs, modules and/or other resources needed to create MVP:
-* React to create components, Redux to manage any state.
-* App will be built using Node.js framework with webpack for bundling.
+## Tools, frameworks, libraries, APIs, etc.
+* React to create components, Redux to manage state.
+* App is built using Node.js framework with webpack for bundling.
+* SportsRadar Curling API is being used to pull daily results from professional games and tournaments.
 * @keyframes in CSS to handle animations.
-* Authentication (using Firebase?)
+* Authentication and Data management is handled using Firebase and Firestore.
 
 ## Stretch goals to add to project:
 
 * A calendar where members can reserve practice ice time using a calendar interface
 * A directory of all club members with contact information.
 * A database of game results that members can log. A possible API might need to be built for this.
-* A notification on the website when a livestream on youtube is currently being broadcasted.
 
-## Component and Route Structure
+## Setup/Installation Requirements_
 
-![Website Schematics](./src/img/schematic.jpg)
+* _Clone this repository from https://github.com/mmcshane10/curling-club.git
+* _From the project's root directory, run "npm i" in the terminal._
+* _From the project's root directory, run "npm run start" in the terminal._
+*_Open the aplication from the localhost URL._
 
 ## Support and contact details
 
