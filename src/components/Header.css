@@ -58,7 +58,7 @@ body {
 
 .heading-primary-main {
   display: block;
-  font-size: 160px;
+  font-size: 100px;
   font-weight: 400;
   letter-spacing: 48px;
   animation: moveInLeft 2s ease-out;
