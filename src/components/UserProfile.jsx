@@ -31,13 +31,13 @@ class UserProfile extends React.Component {
         <h2 className='heading greeting'>Hello {this.props.currentUser.displayName}</h2>
         <div className="row">
           <div className="col s6 profile-column">
-            <h5 className='heading'>Your Registered Leagues</h5>
+            <h5 className='profile-heading'>Your Registered Leagues:</h5>
             <ul>
               {userLeagues.map(event => <li className='list-item'>{event}</li>)}
             </ul>
           </div>
           <div className="col s6 profile-column">
-            <h5 className='heading'>Your Registered Bonspiels</h5>
+            <h5 className='profile-heading'>Your Registered Bonspiels:</h5>
             <ul>
               {userBonspiels.map(bon => <li className='list-item'>{bon}</li>)}
             </ul>
